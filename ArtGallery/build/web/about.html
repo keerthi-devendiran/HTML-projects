@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            
+            .column {
+                float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: pink;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+  
+        </style>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/60-512.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p> The CEO of an art gallery acts as a strategic leader, manager, ambassador, and advocate for the institution.</p>
+        <p>janedoe@theartgallery.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-4-512.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>The Art Director plays a role in developing the gallery's branding,visual identity,work closely with artists to understand their artistic vision. </p>
+        <p>mikeross@theartgallery.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://vectorified.com/images/female-avatar-icon-18.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Mary Swiss</h2>
+        <p class="title">Designer</p>
+        <p>A designer is a professional who specializes in creating and executing visual concepts and solutions across various mediums.</p>
+        <p>maryswiss@theartgallery.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </body>
+</html>
